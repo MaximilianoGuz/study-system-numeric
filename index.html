@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App to study conversion of number system</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Estudiar sistemas numéricos</h1>
+
+      <h2>
+        <p>Decimal</p>
+      </h2>
+      <div class="background">
+        <div class="tapa"></div>
+        <p class="number-to-convert" id="decimalNumber"></p>
+      </div>
+
+      <h2>
+        <p>Binario</p>
+      </h2>
+      <div class="background">
+        <div class="tapa"></div>
+        <p class="result1" id="binaryNumber"></p>
+      </div>
+
+      <h2>
+        <p>Hexadecimal</p>
+      </h2>
+      <div class="background">
+        <div class="tapa"></div>
+        <p class="result2" id="hexadecimalNumber"></p>
+      </div>
+
+      <button class="generate" onclick="toGenerateNumer()">
+        <span>Generar numero</span>
+      </button>
+    </div>
+  </body>
+</html>
