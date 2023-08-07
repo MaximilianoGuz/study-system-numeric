@@ -1,0 +1,103 @@
+:root {
+  --color-boton: #111;
+  --gradient-border: linear-gradient(45deg, #cfc501, #ff0048, #ff00ff);
+}
+
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.1em;
+  margin: 40px 0 20px;
+}
+
+h2 {
+  font-size: 0.95em;
+  margin: 20px 0;
+}
+
+.container .background p {
+  font-size: 0.6em;
+  z-index: 5;
+  position: absolute;
+}
+
+.background {
+  box-sizing: border-box;
+  background-image: var(--gradient-border);
+  width: 355px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tapa {
+  background-color: #111;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.tapa:hover {
+  background-color: transparent;
+}
+
+.generate {
+  margin: 40px 0;
+  border: none;
+  border-radius: 8px;
+  background-image: var(--gradient-border);
+  display: flex;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.generate span {
+  background-color: var(--color-boton);
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  transition: .3s;
+}
+
+.generate:active {
+ --color-boton: transparent;
+ transform: scale(0.85);
+}
+
+@media screen and (min-width: 768px){
+  body {
+    font-size: 25px;
+  }
+  .container .background {
+    width: 500px;
+    height: 60px;
+    font-size: 1.1em;
+  }
+}
